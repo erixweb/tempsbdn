@@ -1,0 +1,22 @@
+{
+  "name": "climabadalona",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.4.0",
+    "preact": "^10.16.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "@tauri-apps/cli": "^1.4.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7"
+  }
+}
