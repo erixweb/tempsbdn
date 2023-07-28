@@ -6,7 +6,7 @@ export default function wmocodes() {
 				image: "https://openweathermap.org/img/wn/01d@2x.png",
 			},
 			night: {
-				description: "Net",
+				description: "Aclarit",
 				image: "https://openweathermap.org/img/wn/01n@2x.png",
 			},
 		},
@@ -16,7 +16,7 @@ export default function wmocodes() {
 				image: "https://openweathermap.org/img/wn/01d@2x.png",
 			},
 			night: {
-				description: "Principalmente net",
+				description: "Principalmente aclarit",
 				image: "https://openweathermap.org/img/wn/01n@2x.png",
 			},
 		},
@@ -26,7 +26,7 @@ export default function wmocodes() {
 				image: "https://openweathermap.org/img/wn/02d@2x.png",
 			},
 			night: {
-				description: "Parcialment nuvolaty",
+				description: "Parcialment nuvolat",
 				image: "https://openweathermap.org/img/wn/02n@2x.png",
 			},
 		},
