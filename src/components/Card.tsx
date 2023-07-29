@@ -7,6 +7,11 @@ const API_ENDPOINT =
 
 export default function Card() {
 	const [weather, setWeather] = useState<APIResults | null>(null)
+    
+    //const badalonatime = new Date().toLocaleString('en-US', { timeZone: "Europe/Berlin" })
+	//const formatDate = new Date(badalonatime)
+	//const currentHour = formatDate.getHours()
+
 
 	useEffect(() => {
 		const fetchAPI = async () => {

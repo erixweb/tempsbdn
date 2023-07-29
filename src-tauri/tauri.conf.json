@@ -2,13 +2,13 @@
 	"build": {
 		"beforeDevCommand": "pnpm dev",
 		"beforeBuildCommand": "pnpm build",
-		"devPath": "https://localhost:1420",
+		"devPath": "http://localhost:3000",
 		"distDir": "../dist",
 		"withGlobalTauri": false
 	},
 	"package": {
-		"productName": "climabadalona",
-		"version": "0.0.0"
+		"productName": "tempsbdn",
+		"version": "1.0.0"
 	},
 	"tauri": {
 		"allowlist": {
@@ -21,7 +21,7 @@
 		"bundle": {
 			"active": true,
 			"targets": "all",
-			"identifier": "com.tauri.dev",
+			"identifier": "tempsbdn.vercel.app",
 			"icon": [
 				"icons/32x32.png",
 				"icons/128x128.png",
@@ -37,7 +37,7 @@
 			{
 				"fullscreen": false,
 				"resizable": true,
-				"title": "climabadalona",
+				"title": "tempsbdn",
 				"width": 800,
 				"height": 600
 			}
