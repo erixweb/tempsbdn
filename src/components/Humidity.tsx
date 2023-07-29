@@ -3,7 +3,7 @@ export default function Humidity (props: any) {
 
 
     return (
-        <div className="humidity">
+        <div className="humidity container">
             <div className="content">
                 <h3>Humitat</h3>
                 <p>

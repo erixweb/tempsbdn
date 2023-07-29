@@ -37,8 +37,10 @@ export default function Card() {
 				/>
 			) : ""}
 			{weather ? <Temperature temperature={weather.current_weather.temperature} /> : ""}
-			{weather ? <WindSpeed wind={weather.current_weather.windspeed} /> : ""}
-			{weather ? <Humidity humidity={weather.hourly.relativehumidity_2m[currentHour]} /> : ""}
+			<div className="info">
+				{weather ? <WindSpeed wind={weather.current_weather.windspeed} /> : ""}
+				{weather ? <Humidity humidity={weather.hourly.relativehumidity_2m[currentHour]} /> : ""}
+			</div>
 		</section>
 	)
 }

@@ -51,3 +51,10 @@ section.today img {
     height: 148px;
     object-fit: cover;
 }
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
