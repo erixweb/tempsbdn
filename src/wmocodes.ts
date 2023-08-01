@@ -23,21 +23,21 @@ export default function wmocodes() {
 		"2": {
 			day: {
 				description: "Parcialment nuvolat",
-				image: "https://openweathermap.org/img/wn/02d@2x.png",
+				image: "/partiallycloudy.webp",
 			},
 			night: {
 				description: "Parcialment nuvolat",
-				image: "https://openweathermap.org/img/wn/02n@2x.png",
+				image: "/partiallycloudymoon.webp",
 			},
 		},
 		"3": {
 			day: {
 				description: "Nuvolat",
-				image: "https://openweathermap.org/img/wn/03d@2x.png",
+				image: "/graycloud.png",
 			},
 			night: {
 				description: "Nuvolat",
-				image: "https://openweathermap.org/img/wn/03n@2x.png",
+				image: "/graycloud.png",
 			},
 		},
 		"45": {
