@@ -1,5 +1,10 @@
 import { render } from "preact"
-import App from "./App"
-import "./styles.css"
+import { Router } from "preact-router"
+import "./tailwind.css"
 
-render(<App />, document.getElementById("app")!)
+import App from "./App"
+import PrediccioPage from "./prediccio/prediccio"
+render(<Router>
+    <App path="/" />
+    <PrediccioPage path="/prediccio" />
+</Router>, document.getElementById("app")!)

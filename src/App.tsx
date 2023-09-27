@@ -1,6 +1,6 @@
 import Card from "./components/Card"
-export default function App() {
-
+import "./styles.css"
+export default function App(_props: any) {
 	return (
 		<main>
 			<div className="most-recent">
