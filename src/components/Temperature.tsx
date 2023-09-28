@@ -1,15 +1,16 @@
+import { IconTemperature } from "@tabler/icons-preact"
+
 interface TemperatureProps {
-    temperature: number
+	temperature: number
 }
 
-export default function Temperature (props: TemperatureProps) {
-    const { temperature } = props
+export default function Temperature(props: TemperatureProps) {
+	const { temperature } = props
 
-    return (
-        <div className="temperature">
-            <h2>
-                {temperature}ºC
-            </h2>
-        </div>
-    )
+	return (
+		<div class="flex gap-[3px] temperature">
+            <IconTemperature />
+			<h2>{temperature}ºC</h2>
+		</div>
+	)
 }

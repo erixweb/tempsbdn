@@ -21,7 +21,9 @@ export default function PrediccioPage(_props: any) {
 		if (!weather) return
 
 		let weatherlocal = []
+		const currentDate = new Date()
 		for (let i = 0; i < weather.hourly.time.length; i++) {
+			if (new Date(weather.hourly.time[i]) <= currentDate) continue
 			weatherlocal.push({
 				hour: weather.hourly.time[i],
 				temperature: weather.hourly.temperature_2m[i],
@@ -41,9 +43,9 @@ export default function PrediccioPage(_props: any) {
 			<section class="grid grid-cols-4 items-center gap-[20px]">
 				{hourlyWeather?.map((info: any) => (
 					<div class="w-full bg-slate-200 p-[12px] rounded-[10px]">
-						<div>
-							<p>{info.temperature} ºC</p>
-						</div>
+						<div>{new Date(info.hour).getHours()+":00"}</div>
+						<div>{info.temperature} ºC</div>
+						<div>{info.precipitation_probability}%</div>
 					</div>
 				))}
 			</section>

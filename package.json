@@ -10,6 +10,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@tabler/icons-preact": "^2.36.0",
     "@tauri-apps/api": "1.4.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.30",

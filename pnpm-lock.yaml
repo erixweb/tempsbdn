@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@tabler/icons-preact':
+    specifier: ^2.36.0
+    version: 2.36.0(preact@10.17.1)
   '@tauri-apps/api':
     specifier: 1.4.0
     version: 1.4.0
@@ -600,6 +603,19 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: true
+
+  /@tabler/icons-preact@2.36.0(preact@10.17.1):
+    resolution: {integrity: sha512-5pK3OJFS2NzdUTmdGwnAkNDDAvJ32r6jti+rCBjd+gZjqtZdVNjoOOn8I5PwUOcE+yUk5VkmsoHSVQkBmoc0Nw==}
+    peerDependencies:
+      preact: ^10.5.13
+    dependencies:
+      '@tabler/icons': 2.36.0
+      preact: 10.17.1
+    dev: false
+
+  /@tabler/icons@2.36.0:
+    resolution: {integrity: sha512-pgUAALzzr3sDQ1m0s240LrwVxeUgkFuP6oZnwd1zTB5V7sgvgVUt0Uf0/qYwUQkoqt0oDgGQngXriCCp7AOvrg==}
+    dev: false
 
   /@tauri-apps/api@1.4.0:
     resolution: {integrity: sha512-Jd6HPoTM1PZSFIzq7FB8VmMu3qSSyo/3lSwLpoapW+lQ41CL5Dow2KryLg+gyazA/58DRWI9vu/XpEeHK4uMdw==}
