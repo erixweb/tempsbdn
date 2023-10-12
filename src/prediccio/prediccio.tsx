@@ -24,7 +24,6 @@ export default function PrediccioPage(_props: any) {
 		let weatherlocal = []
 		const currentDate = new Date()
 
-		let hour = 0
 		for (let i = 0; i < weather.hourly.time.length; i++) {
 			if (new Date(weather.hourly.time[i]) <= currentDate) continue
 
