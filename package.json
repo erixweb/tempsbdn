@@ -10,18 +10,18 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tabler/icons-preact": "^2.36.0",
-    "@tauri-apps/api": "1.4.0",
+    "@tabler/icons-preact": "^2.39.0",
+    "@tauri-apps/api": "1.5.0",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.30",
-    "preact": "10.17.1",
+    "postcss": "^8.4.31",
+    "preact": "10.18.1",
     "preact-router": "4.1.2",
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@preact/preset-vite": "2.5.0",
-    "@tauri-apps/cli": "1.4.0",
+    "@tauri-apps/cli": "1.5.2",
     "typescript": "5.2.2",
-    "vite": "4.4.9"
+    "vite": "4.4.11"
   }
 }

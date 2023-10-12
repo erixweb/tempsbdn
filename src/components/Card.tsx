@@ -27,7 +27,7 @@ export default function Card() {
 		fetchAPI()
 	}, [])
 	return (
-		<section id="avui" class="today card">
+		<section id="avui" class="today card bg-slate-300 p-[16px] rounded-[7px] flex flex-col justify-center text-center w-[550px] max-w-[100%]">
 			<nav>
 				<h2>Temps a Badalona</h2>
 			</nav>

@@ -3,7 +3,7 @@ export default function wmocodes() {
 		"0": {
 			day: {
 				description: "Solejat",
-				image: "https://openweathermap.org/img/wn/01d@2x.png",
+				image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb24tdGFibGVyLXN1biIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSJvcmFuZ2UiIGZpbGw9Im9yYW5nZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgPHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIj48L3BhdGg+CiAgIDxwYXRoIGQ9Ik0xMiAxMm0tNCAwYTQgNCAwIDEgMCA4IDBhNCA0IDAgMSAwIC04IDAiPjwvcGF0aD4KICAgPHBhdGggZD0iTTMgMTJoMW04IC05djFtOCA4aDFtLTkgOHYxbS02LjQgLTE1LjRsLjcgLjdtMTIuMSAtLjdsLS43IC43bTAgMTEuNGwuNyAuN20tMTIuMSAtLjdsLS43IC43Ij48L3BhdGg+Cjwvc3ZnPg==",
 			},
 			night: {
 				description: "Aclarit",
@@ -13,7 +13,7 @@ export default function wmocodes() {
 		"1": {
 			day: {
 				description: "Principalment solejat",
-				image: "https://openweathermap.org/img/wn/01d@2x.png",
+				image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb24tdGFibGVyLXN1biIgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSJvcmFuZ2UiIGZpbGw9Im9yYW5nZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgPHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIj48L3BhdGg+CiAgIDxwYXRoIGQ9Ik0xMiAxMm0tNCAwYTQgNCAwIDEgMCA4IDBhNCA0IDAgMSAwIC04IDAiPjwvcGF0aD4KICAgPHBhdGggZD0iTTMgMTJoMW04IC05djFtOCA4aDFtLTkgOHYxbS02LjQgLTE1LjRsLjcgLjdtMTIuMSAtLjdsLS43IC43bTAgMTEuNGwuNyAuN20tMTIuMSAtLjdsLS43IC43Ij48L3BhdGg+Cjwvc3ZnPg==",
 			},
 			night: {
 				description: "Principalmente aclarit",
@@ -33,11 +33,11 @@ export default function wmocodes() {
 		"3": {
 			day: {
 				description: "Nuvolat",
-				image: "/graycloud.png",
+				image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb24tdGFibGVyLWJyYW5kLW9uZWRyaXZlIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9ImdyYXkiIGZpbGw9IiMzYzNjM2QiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgIDxwYXRoIHN0cm9rZT0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSI+PC9wYXRoPgogICA8cGF0aCBkPSJNMTguNDU2IDEwLjQ1YTYuNDUgNi40NSAwIDAgMCAtMTIgLTIuMTUxYTQuODU3IDQuODU3IDAgMCAwIC00LjQ0IDUuMjQxYTQuODU2IDQuODU2IDAgMCAwIDUuMjM2IDQuNDQ0aDEwLjc1MWEzLjc3MSAzLjc3MSAwIDAgMCAzLjk5IC0zLjU0YTMuNzcyIDMuNzcyIDAgMCAwIC0zLjUzOCAtMy45OTJ6Ij48L3BhdGg+Cjwvc3ZnPg==",
 			},
 			night: {
 				description: "Nuvolat",
-				image: "/graycloud.png",
+				image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb24tdGFibGVyLWJyYW5kLW9uZWRyaXZlIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9ImdyYXkiIGZpbGw9IiMzYzNjM2QiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgIDxwYXRoIHN0cm9rZT0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSI+PC9wYXRoPgogICA8cGF0aCBkPSJNMTguNDU2IDEwLjQ1YTYuNDUgNi40NSAwIDAgMCAtMTIgLTIuMTUxYTQuODU3IDQuODU3IDAgMCAwIC00LjQ0IDUuMjQxYTQuODU2IDQuODU2IDAgMCAwIDUuMjM2IDQuNDQ0aDEwLjc1MWEzLjc3MSAzLjc3MSAwIDAgMCAzLjk5IC0zLjU0YTMuNzcyIDMuNzcyIDAgMCAwIC0zLjUzOCAtMy45OTJ6Ij48L3BhdGg+Cjwvc3ZnPg==",
 			},
 		},
 		"45": {
