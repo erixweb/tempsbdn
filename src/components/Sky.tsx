@@ -15,7 +15,7 @@ export default function Sky(props: SkyProps) {
 
 	return (
 		<div className="sky">
-			<img src={image.image} alt={image.description} />
+			<img src={image.image} alt={image.description} class="w-[80px] h-[80px]" />
             <p>
                 {image.description}
             </p>
