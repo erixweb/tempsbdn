@@ -37,17 +37,3 @@ section.today img {
     height: 148px;
     object-fit: cover;
 }
-
-.info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding-top: 20px;
-    width: 100%;
-    place-items: center;
-}
-.info .container {
-    text-align: start;
-    width: 100%;
-    max-width: 200px;
-}

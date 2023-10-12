@@ -2,6 +2,7 @@ import { useEffect, useState } from "preact/hooks"
 import { APIResults } from "../components/types"
 import { API_ENDPOINT } from "../declarations"
 import Sky from "../components/Sky"
+import { IconThermometer, IconUmbrella } from "@tabler/icons-preact"
 
 export default function PrediccioPage(_props: any) {
 	const [weather, setWeather] = useState<APIResults | null>()
@@ -34,7 +35,7 @@ export default function PrediccioPage(_props: any) {
 				humidity: weather.hourly.relativehumidity_2m[i],
 				precipitation_probability: weather.hourly.precipitation_probability[i],
 				weathercode: weather.hourly.weathercode[i],
-				isday: 1
+				isday: 1,
 			})
 		}
 
@@ -44,16 +45,13 @@ export default function PrediccioPage(_props: any) {
 	return (
 		<main class="w-full max-w-[50em] p-[16px]">
 			<h2>Predicció de les próximes hores i dies</h2>
-			<section class="grid grid-cols-4 items-center gap-[20px]">
+			<section class="grid grid-cols-3 items-center gap-[20px]">
 				{hourlyWeather?.map((info: any) => (
-					<div class="w-full bg-slate-200 p-[12px] rounded-[10px]">
+					<div class="w-full bg-slate-200 p-[12px] rounded-[10px] text-start flex flex-col gap-[10px]">
 						<div>{new Date(info.hour).getHours() + ":00"}</div>
-						<Sky
-							wmocode={info.weathercode}
-							time={info.isday}
-						/>
-						<div>{info.temperature} ºC</div>
-						<div>{info.precipitation_probability}%</div>
+						<Sky wmocode={info.weathercode} time={info.isday} />
+						<div class="inline-flex gap-[10px]"><IconThermometer /> {info.temperature} ºC</div>
+						<div class="inline-flex gap-[10px]"><IconUmbrella /> {info.precipitation_probability}%</div>
 					</div>
 				))}
 			</section>

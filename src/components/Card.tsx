@@ -27,7 +27,7 @@ export default function Card() {
 		fetchAPI()
 	}, [])
 	return (
-		<section id="avui" class="today card bg-slate-300 p-[16px] rounded-[7px] flex flex-col justify-center text-center w-[550px] max-w-[100%]">
+		<section id="avui" class="today card bg-slate-300 p-[16px] py-[30px] rounded-[7px] flex flex-col justify-center text-center w-[550px] max-w-[100%]">
 			<nav>
 				<h2>Temps a Badalona</h2>
 			</nav>
@@ -38,7 +38,7 @@ export default function Card() {
 				/>
 			) : ""}
 			{weather ? <Temperature temperature={weather.current_weather.temperature} /> : ""}
-			<div className="info">
+			<div className="grid grid-cols-2 max-sm:grid-cols-1 py-[20px] gap-[20px] text-start">
 				{weather ? <WindSpeed wind={weather.current_weather.windspeed} /> : ""}
 				{weather ? <Humidity humidity={weather.hourly.relativehumidity_2m[currentHour]} /> : ""}
 				{weather ? <PrecipitationProb probability={weather.hourly.precipitation_probability[currentHour]} /> : ""}
