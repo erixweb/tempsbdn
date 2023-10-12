@@ -4,7 +4,11 @@ import "./tailwind.css"
 
 import App from "./App"
 import PrediccioPage from "./prediccio/prediccio"
-render(<Router>
-    <App path="/" />
-    <PrediccioPage path="/prediccio" />
-</Router>, document.getElementById("app")!)
+
+render(
+	<Router>
+		<App path="/" />
+		<PrediccioPage path="/prediccio" />
+	</Router>,
+	document.getElementById("app")!
+)
