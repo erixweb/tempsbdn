@@ -43,21 +43,21 @@ export default function wmocodes() {
 		"45": {
 			day: {
 				description: "Boirós",
-				image: "https://openweathermap.org/img/wn/50d@2x.png",
+				image: "/icons/boira.svg",
 			},
 			night: {
 				description: "Boirós",
-				image: "https://openweathermap.org/img/wn/50n@2x.png",
+				image: "/icons/boira.svg",
 			},
 		},
 		"48": {
 			day: {
 				description: "Boira gelada",
-				image: "https://openweathermap.org/img/wn/50d@2x.png",
+				image: "/icons/boira.svg",
 			},
 			night: {
 				description: "Boira gelada",
-				image: "https://openweathermap.org/img/wn/50n@2x.png",
+				image: "/icons/boira.svg",
 			},
 		},
 		"51": {

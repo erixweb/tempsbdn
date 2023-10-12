@@ -3,6 +3,8 @@ import { APIResults } from "../components/types"
 import { API_ENDPOINT, days } from "../declarations"
 import Sky from "../components/Sky"
 import { IconThermometer, IconUmbrella } from "@tabler/icons-preact"
+import ArrowUp from "../components/arrow-up"
+import ArrowDown from "../components/arrow-down"
 
 export default function PrediccioPage(_props: any) {
 	const [weather, setWeather] = useState<APIResults | null>()
@@ -44,24 +46,26 @@ export default function PrediccioPage(_props: any) {
 
 	return (
 		<main class="w-full max-w-[50em] p-[16px]">
-			<h2>Predicció de les próximes hores i dies</h2>
-			<section class="grid grid-cols-3 items-center gap-[20px]">
-				{hourlyWeather?.map((info: any) => {
+			<h2 class="text-[25px] font-bold text-center p-[20px]">Predicció de les próximes hores i dies</h2>
+			<section class="grid grid-cols-3 items-center gap-[20px] max-md:grid-cols-2 max-sm:grid-cols-1">
+				{hourlyWeather?.map((info: any, index: number) => {
 					const date = new Date(info.hour)
 
-				return (
-					<div class="w-full bg-slate-200 p-[12px] rounded-[10px] text-start flex flex-col gap-[10px]">
-						<div>{days[date.getDay()]}</div>
-						<div>{date.getHours() + ":00"}</div>
-						<Sky wmocode={info.weathercode} time={info.isday} />
-						<div class="inline-flex gap-[10px]">
-							<IconThermometer /> {info.temperature} ºC
+					return (
+						<div class="w-full bg-slate-200 p-[12px] rounded-[10px] text-start flex flex-col gap-[10px]">
+							<div>{days[date.getDay()]}</div>
+							<div>{date.getHours() + ":00"}</div>
+							<Sky wmocode={info.weathercode} time={info.isday} />
+							<div class="inline-flex gap-[10px]">
+								<IconThermometer /> {info.temperature} ºC
+								{hourlyWeather[index - 1]?.temperature < info.temperature ? <ArrowUp /> : <ArrowDown />}
+							</div>
+							<div class="inline-flex gap-[10px]">
+								<IconUmbrella /> {info.precipitation_probability}%
+							</div>
 						</div>
-						<div class="inline-flex gap-[10px]">
-							<IconUmbrella /> {info.precipitation_probability}%
-						</div>
-					</div>
-				)})}
+					)
+				})}
 			</section>
 		</main>
 	)
