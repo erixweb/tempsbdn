@@ -1,6 +1,6 @@
 import { useEffect, useState } from "preact/hooks"
 import { APIResults } from "../components/types"
-import { API_ENDPOINT } from "../declarations"
+import { API_ENDPOINT, days } from "../declarations"
 import Sky from "../components/Sky"
 import { IconThermometer, IconUmbrella } from "@tabler/icons-preact"
 
@@ -46,14 +46,22 @@ export default function PrediccioPage(_props: any) {
 		<main class="w-full max-w-[50em] p-[16px]">
 			<h2>Predicció de les próximes hores i dies</h2>
 			<section class="grid grid-cols-3 items-center gap-[20px]">
-				{hourlyWeather?.map((info: any) => (
+				{hourlyWeather?.map((info: any) => {
+					const date = new Date(info.hour)
+
+				return (
 					<div class="w-full bg-slate-200 p-[12px] rounded-[10px] text-start flex flex-col gap-[10px]">
-						<div>{new Date(info.hour).getHours() + ":00"}</div>
+						<div>{days[date.getDay()]}</div>
+						<div>{date.getHours() + ":00"}</div>
 						<Sky wmocode={info.weathercode} time={info.isday} />
-						<div class="inline-flex gap-[10px]"><IconThermometer /> {info.temperature} ºC</div>
-						<div class="inline-flex gap-[10px]"><IconUmbrella /> {info.precipitation_probability}%</div>
+						<div class="inline-flex gap-[10px]">
+							<IconThermometer /> {info.temperature} ºC
+						</div>
+						<div class="inline-flex gap-[10px]">
+							<IconUmbrella /> {info.precipitation_probability}%
+						</div>
 					</div>
-				))}
+				)})}
 			</section>
 		</main>
 	)
