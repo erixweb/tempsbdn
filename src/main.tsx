@@ -4,11 +4,13 @@ import "./tailwind.css"
 
 import App from "./App"
 import PrediccioPage from "./prediccio/prediccio"
+import NotFound from "./404"
 
 render(
 	<Router>
-		<App path="/" />
+		<App path="/e" />
 		<PrediccioPage path="/prediccio" />
+		<NotFound default />
 	</Router>,
 	document.getElementById("app")!
 )
