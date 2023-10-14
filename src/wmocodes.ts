@@ -63,51 +63,51 @@ export default function wmocodes() {
 		"51": {
 			day: {
 				description: "Plugim lleuger",
-				image: "https://openweathermap.org/img/wn/09d@2x.png",
+				image: "/icons/plugim.svg",
 			},
 			night: {
 				description: "Plugin lleuger",
-				image: "https://openweathermap.org/img/wn/09n@2x.png",
+				image: "/icons/plugim.svg",
 			},
 		},
 		"53": {
 			day: {
 				description: "Plugim",
-				image: "https://openweathermap.org/img/wn/09d@2x.png",
+				image: "/icons/plugim.svg",
 			},
 			night: {
 				description: "Plugim",
-				image: "https://openweathermap.org/img/wn/09n@2x.png",
+				image: "/icons/plugim.svg",
 			},
 		},
 		"55": {
 			day: {
 				description: "Plugim intens",
-				image: "https://openweathermap.org/img/wn/09d@2x.png",
+				image: "/icons/plugim.svg",
 			},
 			night: {
-				description: "Pluja intensa",
-				image: "https://openweathermap.org/img/wn/09n@2x.png",
+				description: "Plugim intens",
+				image: "/icons/plugim.svg",
 			},
 		},
 		"56": {
 			day: {
 				description: "Plugim lleuger gelat",
-				image: "https://openweathermap.org/img/wn/09d@2x.png",
+				image: "/icons/plugim.svg",
 			},
 			night: {
 				description: "Plugim lleuger gelat",
-				image: "https://openweathermap.org/img/wn/09n@2x.png",
+				image: "/icons/plugim.svg",
 			},
 		},
 		"57": {
 			day: {
 				description: "Plugim gelat",
-				image: "https://openweathermap.org/img/wn/09d@2x.png",
+				image: "/icons/plugim.svg",
 			},
 			night: {
 				description: "Plugim gelat",
-				image: "https://openweathermap.org/img/wn/09n@2x.png",
+				image: "/icons/plugim.svg",
 			},
 		},
 		"61": {

@@ -8,7 +8,7 @@ import NotFound from "./404"
 
 render(
 	<Router>
-		<App path="/e" />
+		<App path="/" />
 		<PrediccioPage path="/prediccio" />
 		<NotFound default />
 	</Router>,
