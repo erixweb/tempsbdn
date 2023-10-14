@@ -7,7 +7,7 @@ export default function wmocodes() {
 			},
 			night: {
 				description: "Aclarit",
-				image: "https://openweathermap.org/img/wn/01n@2x.png",
+				image: "/icons/lluna.svg",
 			},
 		},
 		"1": {
@@ -17,7 +17,7 @@ export default function wmocodes() {
 			},
 			night: {
 				description: "Principalmente aclarit",
-				image: "https://openweathermap.org/img/wn/01n@2x.png",
+				image: "/icons/lluna.svg",
 			},
 		},
 		"2": {

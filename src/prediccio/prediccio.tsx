@@ -2,7 +2,7 @@ import { useEffect, useState } from "preact/hooks"
 import { APIResults } from "../components/types"
 import { API_ENDPOINT, days } from "../declarations"
 import Sky from "../components/Sky"
-import { IconThermometer, IconUmbrella } from "@tabler/icons-preact"
+import { IconDropletHalf2, IconThermometer, IconUmbrella } from "@tabler/icons-preact"
 import ArrowUp from "../components/arrow-up"
 import ArrowDown from "../components/arrow-down"
 
@@ -37,7 +37,8 @@ export default function PrediccioPage(_props: any) {
 				humidity: weather.hourly.relativehumidity_2m[i],
 				precipitation_probability: weather.hourly.precipitation_probability[i],
 				weathercode: weather.hourly.weathercode[i],
-				isday: 1,
+				isday: weather.hourly.is_day[i],
+				precipitation: weather.hourly.precipitation[i],
 			})
 		}
 
@@ -46,7 +47,9 @@ export default function PrediccioPage(_props: any) {
 
 	return (
 		<main class="w-full max-w-[50em] p-[16px]">
-			<h2 class="text-[25px] font-bold text-center p-[20px]">Predicció de les próximes hores i dies</h2>
+			<h2 class="text-[25px] font-bold text-center p-[20px]">
+				Predicció de les próximes hores i dies
+			</h2>
 			<section class="grid grid-cols-3 items-center gap-[20px] max-md:grid-cols-2 max-sm:grid-cols-1">
 				{hourlyWeather?.map((info: any, index: number) => {
 					const date = new Date(info.hour)
@@ -58,10 +61,19 @@ export default function PrediccioPage(_props: any) {
 							<Sky wmocode={info.weathercode} time={info.isday} />
 							<div class="inline-flex gap-[10px]">
 								<IconThermometer /> {info.temperature} ºC
-								{hourlyWeather[index - 1]?.temperature < info.temperature ? <ArrowUp /> : <ArrowDown />}
+								{hourlyWeather[index - 1]?.temperature < info.temperature ? (
+									<ArrowUp />
+								) : (
+									<ArrowDown />
+								)}
 							</div>
 							<div class="inline-flex gap-[10px]">
-								<IconUmbrella /> {info.precipitation_probability}%
+								<IconUmbrella />{" "}
+								{info.precipitation_probability}%
+							</div>
+							<div class="inline-flex gap-[10px]">
+								<IconDropletHalf2 />{" "}
+								{info.precipitation}mm
 							</div>
 						</div>
 					)

@@ -33,13 +33,13 @@ export default function Card() {
 			</nav>
 			{weather ? (
 				<Sky
-					wmocode={weather.current_weather.weathercode}
-					time={weather.current_weather.is_day}
+					wmocode={weather.current.weathercode}
+					time={weather.current.is_day}
 				/>
 			) : ""}
-			{weather ? <Temperature temperature={weather.current_weather.temperature} /> : ""}
+			{weather ? <Temperature temperature={weather.current.temperature_2m} /> : ""}
 			<div className="grid grid-cols-2 max-sm:grid-cols-1 py-[20px] gap-[20px] text-start">
-				{weather ? <WindSpeed wind={weather.current_weather.windspeed} /> : ""}
+				{weather ? <WindSpeed wind={weather.current.windspeed_10m} /> : ""}
 				{weather ? <Humidity humidity={weather.hourly.relativehumidity_2m[currentHour]} /> : ""}
 				{weather ? <PrecipitationProb probability={weather.hourly.precipitation_probability[currentHour]} /> : ""}
 				{weather ? <ThermalSensation degrees={weather.hourly.apparent_temperature[currentHour]} /> : ""}
