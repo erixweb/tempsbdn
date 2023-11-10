@@ -44,6 +44,7 @@ export default function Card() {
 				{weather ? <PrecipitationProb probability={weather.hourly.precipitation_probability[currentHour]} /> : ""}
 				{weather ? <ThermalSensation degrees={weather.hourly.apparent_temperature[currentHour]} /> : ""}
 			</div>
+			<a href="/prediccio" class="w-full text-center text-blue-600">Veure la previsió</a>
 		</section>
 	)
 }
