@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "preact/hooks"
+import { useEffect, useState } from "preact/hooks"
 import { APIResults } from "../components/types"
 import { API_ENDPOINT, days } from "../declarations"
 import Sky from "../components/Sky"
