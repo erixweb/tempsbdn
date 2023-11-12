@@ -5,13 +5,10 @@ import Sky from "../components/Sky"
 import { IconDropletHalf2, IconThermometer, IconUmbrella } from "@tabler/icons-preact"
 import ArrowUp from "../components/arrow-up"
 import ArrowDown from "../components/arrow-down"
-import Highcharts from "highcharts"
-import HighchartsReact from "highcharts-react-official"
 
 export default function PrediccioPage(_props: any) {
 	const [weather, setWeather] = useState<APIResults | null>()
 	const [hourlyWeather, setHourlyWeather] = useState<any>([])
-	const [options, setOptions] = useState<any>()
 	useEffect(() => {
 		const fetchAPI = async () => {
 			return await fetch(API_ENDPOINT)
@@ -45,30 +42,6 @@ export default function PrediccioPage(_props: any) {
 		}
 
 		setHourlyWeather(weatherlocal)
-		setOptions({
-			chart: {
-				type: "spline",
-			},
-			title: {
-				text: "Temperatura próximes 71 hores",
-			},
-			yAxis: {
-				title: {
-					text: "Temperatura"
-				}
-			},
-			xAxis: {
-				title: {
-					text: "Hores"
-				}
-			},
-			series: [
-				{
-					name: "Temperatura",
-					data: weather.hourly.temperature_2m,	
-				},
-			],
-		})
 	}, [weather])
 
 	return (
@@ -103,7 +76,6 @@ export default function PrediccioPage(_props: any) {
 					)
 				})}
 			</section>
-			<HighchartsReact highcharts={Highcharts} options={options}/>
 		</main>
 	)
 }
