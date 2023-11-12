@@ -1,4 +1,4 @@
-import Highcharts, { Options } from "highcharts"
+import Highcharts from "highcharts"
 import HighchartsReact from "highcharts-react-official"
 import { useEffect, useState } from "preact/hooks"
 import { APIResults } from "../components/types"
