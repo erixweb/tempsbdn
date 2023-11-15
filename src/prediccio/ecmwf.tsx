@@ -5,7 +5,7 @@ import Highcharts from "highcharts"
 import HighchartsReact from "highcharts-react-official"
 
 export default function ECMWFPrediction(_props: any) {
-	const [weather, fetchWeather] = useWeater(ECMWF_ENDPOINT)
+	const [weather] = useWeater(ECMWF_ENDPOINT)
 	const [options, setOptions] = useState<any>()
 
     useEffect(() => {
