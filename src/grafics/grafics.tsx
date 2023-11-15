@@ -5,7 +5,7 @@ import { APIResults } from "../components/types"
 import { API_ENDPOINT, LONG_PREDICTION } from "../declarations"
 
 export default function Graphics(_props: any) {
-	const [weather, setWeather] = useState<APIResults | null>()
+	const [weather, setWeather] = useState<APIResults>()
 	const [options, setOptions] = useState<any>()
 	const [apiEndpoint, setAPIEndpoint] = useState<string>(API_ENDPOINT)
 	const [endpointName, setEndpointName] = useState<string>("short")

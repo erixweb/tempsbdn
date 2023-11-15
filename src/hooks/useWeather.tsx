@@ -1,8 +1,11 @@
 import { useEffect, useState } from "preact/hooks"
 import { APIResults } from "../components/types"
-
-export default function useWeater(endpoint: string) {
-	const [weather, setWeather] = useState<APIResults>()
+export type Weather = {
+    weather: APIResults | undefined
+    fetchWeather: () => Promise<void>
+}
+export default function useWeater(endpoint: string): any {
+	const [weather, setWeather] = useState<APIResults|any>()
     const fetchWeather = async () => {
         await fetch(endpoint)
             .then(res => res.json())

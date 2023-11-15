@@ -37,3 +37,6 @@ section.today img {
     height: 148px;
     object-fit: cover;
 }
+.highcharts-credits {
+    display: none;
+}
