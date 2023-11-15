@@ -24,6 +24,7 @@ export default function ECMWFPrediction(_props: any) {
 				title: {
 					text: "Valor",
 				},
+
 			},
 			xAxis: {
 				title: {
@@ -34,6 +35,10 @@ export default function ECMWFPrediction(_props: any) {
 				{
 					name: "Temperatura (ºC)",
 					data: weather?.hourly.temperature_2m,
+				},
+                {
+					name: "Sensació tèrmica (ºC)",
+					data: weather?.hourly.apparent_temperature,
 				},
 				{
 					name: "Humitat (%)",

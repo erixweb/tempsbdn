@@ -40,3 +40,6 @@ section.today img {
 .highcharts-credits {
     display: none;
 }
+.highcharts-button-box {
+    fill: rgb(250, 252, 255);
+}
