@@ -56,7 +56,7 @@ export default function ECMWFPrediction(_props: any) {
 		})
 	}, [weather])
 	return (
-        <main class="w-full max-w-[50em] p-[16px]">
+        <main class="w-full max-w-[50em] p-[16px] m-auto">
 			<h2 class="text-[25px] font-bold text-center p-[20px]">Gràfiques del temps (Model ECMWF)</h2>
 			<section>
 				<HighchartsReact

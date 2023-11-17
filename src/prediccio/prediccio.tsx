@@ -45,16 +45,21 @@ export default function PrediccioPage(_props: any) {
 	}, [weather])
 
 	return (
-		<main class="w-full max-w-[50em] p-[16px]">
+		<main class="w-full max-w-[50em] p-[16px] m-auto">
 			<h2 class="text-[25px] font-bold text-center p-[20px]">
 				Predicció de les próximes hores i dies
 			</h2>
+			<div class="w-full text-center p-[20px]">
+				<a href="/ecmwf" class="text-center text-blue-400 w-full">
+					Veure model ECMWF
+				</a>
+			</div>
 			<section class="grid grid-cols-3 items-center gap-[20px] max-md:grid-cols-2 max-sm:grid-cols-1">
 				{hourlyWeather?.map((info: any, index: number) => {
 					const date = new Date(info.hour)
 
 					return (
-						<div class="w-full bg-slate-200 p-[12px] rounded-[10px] text-start flex flex-col gap-[10px]">
+						<div class="w-full bg-slate-200 p-[12px] rounded-[10px] text-start flex flex-col gap-[10px] m-auto">
 							<div>{days[date.getDay()]}</div>
 							<div>{date.getHours() + ":00"}</div>
 							<Sky wmocode={info.weathercode} time={info.isday} />
