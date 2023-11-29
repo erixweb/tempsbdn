@@ -1,0 +1,19 @@
+---
+import { endpoint } from "../constants"
+import PageLayout from "../layouts/pagelayout.astro"
+import wmocodes from "../wmocodes"
+import { type Weather } from "../types"
+
+const request = await fetch(endpoint)
+const res: Weather = await request.json()
+const weatherCodes: any = wmocodes()
+const date = new Date().getHours()
+---
+
+<PageLayout title="Temps a Badalona">
+	<main class="m-auto max-w-[1200px]">
+		<section>
+			{weatherCodes[`${res.hourly.weather_code[date]}`].day.description}
+		</section>
+	</main>
+</PageLayout>
