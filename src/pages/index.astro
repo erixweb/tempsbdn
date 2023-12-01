@@ -12,8 +12,19 @@ const date = new Date().getHours()
 
 <PageLayout title="Temps a Badalona">
 	<main class="m-auto max-w-[1200px]">
-		<section>
-			{weatherCodes[`${res.hourly.weather_code[date]}`].day.description}
+		<section class="mt-[20px] w-full bg-gray-800 rounded-[7px] shadow-xl shadow-gray-400 min-h-[200px] text-white flex">
+			<div class="w-full p-[16px] float-left">
+				<div class="bg-gray-900/50">
+					<h3>Badalona {date}:00</h3>
+				</div>
+				<h1 class="font-bold text-[25px]">{res.hourly.temperature_2m[date]}</h1>
+				<h2 class="font-bold text-[20px]">
+					{weatherCodes[`${res.hourly.weather_code[date]}`].day.description}
+				</h2>
+			</div>
+			<div class="w-full h-full flex items-center float-right p-[16px]">
+				<img src={weatherCodes[`${res.hourly.weather_code[date]}`].day.image} alt="" class="w-[120px] h-[120px] float-right">
+			</div>
 		</section>
 	</main>
 </PageLayout>
